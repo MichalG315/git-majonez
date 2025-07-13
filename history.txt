@@ -1,0 +1,31 @@
+  393  cd workspace
+  394  mkdir git-majonez
+  395  cd git-majonez/
+  396  git init
+  397  git status
+  398  touch main.cpp
+  399  vim main.cpp
+  400  git add main.cpp
+  401  git status
+  402  git commit -m"Initial commit"
+  403  vim main.cpp
+  404  git add main.cpp
+  405  git commit -m"Farewell changed"
+  406  git remote add origin https://github.com/MichalG315/git-majonez.git
+  407  git push -u origin master
+  408  git branch cs
+  409  git checkout cs
+  410  git log
+  411  git reset --hard 1a259c9da6614210cdc7796a5611ab72106cd160
+  412  vim main.cpp
+  413  git add main.cpp
+  414  git commit -m"Greetings"
+  415  git push origin cs
+  416  git checkout master
+  417  git merge cs
+  418  vim main.cpp
+  419  git add main.cpp
+  420  git commit
+  421  history
+  422  history | tail -n30
+  423  history | tail -n31 >> history.txt
